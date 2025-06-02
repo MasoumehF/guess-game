@@ -1,5 +1,5 @@
 class StringDatabase:
-    def __init__(self, filename="words.txt"):
+    def __init__(self, filename="four_letters.txt"):
         self.words = []
         with open(filename, 'r') as f:
             for line in f:
