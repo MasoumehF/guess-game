@@ -21,7 +21,7 @@ class Game:
 
     def guess_letter(self, letter):
         if letter in self.letters_guessed:
-            return False
+            return -1
         self.letters_guessed.append(letter)
         self.letter_guess_count += 1
 

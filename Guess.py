@@ -51,7 +51,9 @@ class Guess:
                         input("Press Enter to continue...")
                         continue
                     result = game.guess_letter(letter)
-                    if result == 0:
+                    if result == -1:
+                        print(f"'{letter}' is already already guessed.")
+                    elif result == 0:
                         print(f"'{letter}' is not in the word.")
                     elif result:
                         print(f"'{letter}' found {result} time(s)!")
